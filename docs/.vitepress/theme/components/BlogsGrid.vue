@@ -4,8 +4,10 @@
         :title="article.frontMatter.title"
         :author="article.frontMatter.author"
         :category="article.frontMatter.category"
+        :thumbnail="article.frontMatter.thumbnail"
         :description="article.frontMatter.description"
-        :date="article.frontMatter.date">
+        :date="article.frontMatter.date"
+        :path="article.path">
     </BlogCard>
     </div>
 </template>

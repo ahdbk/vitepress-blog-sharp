@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-  <div class="card">
+  <div class="card" @click="goTo(path)">
     <div class="card-header">
-      <img src="https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=100" alt="" />
+      <img :src="thumbnail" alt="" />
     </div>
     <div class="card-body">
       <span class="tag tag-teal">{{ category }}</span>
-      <h4>{{ title }}</h4>
+      <h2 class="title">{{ title }}</h2>
       <p>{{ description }}</p>
       <div class="user">
         <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=100" alt="" />
@@ -20,14 +20,24 @@
 </div>
 </template>
 <script lang="ts" setup>
+import { useRouter, withBase } from 'vitepress'
+
+var router = useRouter()
 
 const props = defineProps({
     title: String,
     date: String,
     author: String,
     category: String,
-    description: String
+    thumbnail: String,
+    description: String,
+    path: String
 })
+
+
+const goTo = (path: string) => {
+  router.go(withBase(path))
+}
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -44,6 +54,12 @@ const props = defineProps({
   width: 300px;
   transform: scale(1);
   transition: transform 0.2s cubic-bezier(.65,.05,.36,1), box-shadow 0.2s cubic-bezier(.65,.05,.36,1), filter 0.4s cubic-bezier(.65,.05,.36,1);
+}
+
+.title {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: large;
 }
 .card:hover {
   cursor: pointer;
@@ -79,7 +95,7 @@ const props = defineProps({
 
 .card-body p {
   font-size: 13px;
-  margin: 0 0 40px;
+  margin: 0 0 1rem;
 }
 .user {
   display: flex;

@@ -13,7 +13,7 @@ async function getPosts() {
             data.date = _convertDate(data.date)
             return {
                 frontMatter: data,
-                regularPath: `/${item.replace('.md', '.html')}`
+                path: `/${item.substring(5).replace('.md', '.html')}`
             }
         })
     )
