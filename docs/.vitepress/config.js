@@ -1,4 +1,4 @@
-const { getPosts  } = require('./theme/server')
+const { getPosts  } = require('../../server/server')
 
 async function config() {
 

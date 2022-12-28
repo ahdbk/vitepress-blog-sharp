@@ -13,12 +13,16 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.33",
-    "vue": "^3.2.45",
+    "@types/node": "^18.11.8",
+    "fs-extra": "^10.1.0",
     "globby": "^11.1.0",
     "gray-matter": "^4.0.3",
-    "fs-extra": "^10.1.0",
-    "typescript": "^4.8.4"
-
+    "typescript": "^4.8.4",
+    "vitepress": "^1.0.0-alpha.33",
+    "vue": "^3.2.45"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.47.1",
+    "vue-eslint-parser": "^9.1.0"
   }
 }
