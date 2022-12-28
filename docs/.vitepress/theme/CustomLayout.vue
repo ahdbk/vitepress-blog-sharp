@@ -1,6 +1,5 @@
 <template>
     <Layout/>
-    <!-- <HomePage/> -->
 </template>
 
 <script setup>

@@ -6,9 +6,9 @@ layout: home
 sidebar: false
 ---
 <script setup>
-import HomePage from "./.vitepress/theme/components/HomePage.vue";
+import BlogsGrid from "./.vitepress/theme/components/BlogsGrid.vue";
 import { useData } from "vitepress";
 const { theme } = useData();
 const posts = theme.value.posts.slice(0,3)
 </script>
-<HomePage :posts="posts" />
+<BlogsGrid :posts="posts" />
