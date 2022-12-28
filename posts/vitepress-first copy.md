@@ -1,6 +1,8 @@
 ---
 date: 2021-06-30
 title: Dummy is a content generation 2
+author: Ahd Ben Kheder
+category: DotNet
 tags:
 - vitepress
 - markdown

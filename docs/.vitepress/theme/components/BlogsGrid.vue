@@ -1,10 +1,12 @@
 <template>
     <div v-for="(article, index) in posts" :key="index" class="list">
-        <div class="list-header">
-            <div class="list-li">
-                <a> {{ article.frontMatter.title }}</a>
-            </div>
-        </div>
+        <BlogCard 
+        :title="article.frontMatter.title"
+        :author="article.frontMatter.author"
+        :category="article.frontMatter.category"
+        :description="article.frontMatter.description"
+        :date="article.frontMatter.date">
+    </BlogCard>
     </div>
 </template>
 
@@ -14,3 +16,4 @@ const props = defineProps({
     posts: Array,
 })
 </script>
+
