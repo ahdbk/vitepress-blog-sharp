@@ -20,27 +20,12 @@
 </div>
 </template>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   box-sizing: border-box;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background-color: #f7f8fc;
-  font-family: "Roboto", sans-serif;
-  color: #10182f;
-  min-height: 100vh;
-}
-.container {
-  display: flex;
-  width: 1040px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+
 .card {
   margin: 10px;
   background-color: #fff;
