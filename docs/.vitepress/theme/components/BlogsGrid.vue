@@ -13,9 +13,9 @@
 </template>
 
 <script lang="ts" setup>
-
+import  {Post} from '../models/post'
 const props = defineProps({
-    posts: Array,
+    posts: Array<Post>,
 })
 </script>
 

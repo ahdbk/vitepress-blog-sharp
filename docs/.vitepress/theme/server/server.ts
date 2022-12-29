@@ -1,10 +1,11 @@
-const globby = require('globby')
-const matter = require('gray-matter')
-const fs = require('fs-extra')
+// code from https://github.com/airene/vitepress-blog-pure
 
-module.exports = { getPosts }
+import  globby from 'globby';
+import  matter from 'gray-matter';
+import fs from 'fs-extra';
+import  {Post} from '../models/post'
 
-async function getPosts() {
+export async function getPosts(): Promise<Post[]> {
     let paths = await getPostMDFilePaths()
     let posts = await Promise.all(
         paths.map(async (item) => {
@@ -14,7 +15,7 @@ async function getPosts() {
             return {
                 metaData: data,
                 path: `/${item.substring(5).replace('.md', '.html')}`
-            }
+            } as Post
         })
     )
     posts.sort(_compareDate)
@@ -22,7 +23,7 @@ async function getPosts() {
 }
 
 
-function _convertDate(date = new Date().toString()) {
+function _convertDate(date = new Date().toString()):string {
     const json_date = new Date(date).toJSON()
     return json_date.split('T')[0]
 }
