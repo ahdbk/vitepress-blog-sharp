@@ -1,12 +1,12 @@
 <template>
     <div v-for="(article, index) in posts" :key="index" class="list">
         <BlogCard 
-        :title="article.frontMatter.title"
-        :author="article.frontMatter.author"
-        :category="article.frontMatter.category"
-        :thumbnail="article.frontMatter.thumbnail"
-        :description="article.frontMatter.description"
-        :date="article.frontMatter.date"
+        :title="article.metaData.title"
+        :author="article.metaData.author"
+        :category="article.metaData.category"
+        :cover="article.metaData.cover"
+        :description="article.metaData.description"
+        :date="article.metaData.date"
         :path="article.path">
     </BlogCard>
     </div>

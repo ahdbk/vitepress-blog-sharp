@@ -2,14 +2,14 @@
     <div class="container">
   <div class="card" @click="goTo(path)">
     <div class="card-header">
-      <img :src="thumbnail" alt="" />
+      <img :src="cover" alt="" />
     </div>
     <div class="card-body">
       <span class="tag tag-teal">{{ category }}</span>
       <h2 class="title">{{ title }}</h2>
       <p>{{ description }}</p>
       <div class="user">
-        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=100" alt="" />
+        <img src="https://picsum.photos/id/64/200/200" alt="" />
         <div class="user-info">
           <h5>{{ author }}</h5>
           <small>{{ date }}</small>
@@ -29,7 +29,7 @@ const props = defineProps({
     date: String,
     author: String,
     category: String,
-    thumbnail: String,
+    cover: String,
     description: String,
     path: String
 })

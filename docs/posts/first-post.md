@@ -3,7 +3,8 @@ date: 2021-06-30
 title: First Post
 author: Jon Doe
 category: Sport
-thumbnail: https://supersharp.tech/wp-content/uploads/2021/12/miniature5-1024x869.png
+cover: https://picsum.photos/1024/869
+
 tags:
 - vitepress
 - markdown
