@@ -12,7 +12,7 @@ async function getPosts() {
             const { data } = matter(content)
             data.date = _convertDate(data.date)
             return {
-                frontMatter: data,
+                metaData: data,
                 path: `/${item.substring(5).replace('.md', '.html')}`
             }
         })
@@ -28,7 +28,7 @@ function _convertDate(date = new Date().toString()) {
 }
 
 function _compareDate(obj1, obj2) {
-    return obj1.frontMatter.date < obj2.frontMatter.date ? 1 : -1
+    return obj1.metaData.date < obj2.metaData.date ? 1 : -1
 }
 
 async function getPostMDFilePaths() {
