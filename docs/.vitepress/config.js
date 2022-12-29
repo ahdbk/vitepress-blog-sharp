@@ -10,8 +10,6 @@ async function config() {
         website: "",
         nav: [
           { text: "Home", link: "/" },
-          { text: "Archives", link: "/pages/archives" },
-          { text: "Tags", link: "/pages/tags" },
           { text: "About", link: "/pages/about" },
         ],
       },

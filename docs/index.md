@@ -17,15 +17,18 @@ const posts = theme.value.posts.slice(0,3)
 
 <style>
 .blogs-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 3rem 7rem;
-}
+    display: flex;
+    justify-content: flex-start ;
+    margin: 0 auto;
+    max-width: calc(var(--vp-layout-max-width) - 64px);
+    pointer-events: none;
+  }
+
 
 @media (max-width: 800px) {
   .blogs-container {
     flex-direction: column;
+    align-items: center;
   }
 }
 </style>
