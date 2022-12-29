@@ -1,5 +1,4 @@
 <template>
-    <div class="container">
   <div class="card" @click="goTo(path)">
     <div class="card-header">
       <img :src="cover" alt="" />
@@ -17,7 +16,6 @@
       </div>
     </div>
   </div>
-</div>
 </template>
 <script lang="ts" setup>
 import { useRouter, withBase } from 'vitepress'
@@ -36,6 +34,7 @@ const props = defineProps({
 
 
 const goTo = (path: string) => {
+  console.log("here")
   router.go(withBase(path))
 }
 </script>
@@ -47,12 +46,11 @@ const goTo = (path: string) => {
 
 .card {
   margin: 10px;
-  background-color: --vp-c-bg;
+  padding: 0;
+  background-color:  var(--vp-post-bg);
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 300px;
-  transform: scale(1);
   transition: transform 0.2s cubic-bezier(.65,.05,.36,1), box-shadow 0.2s cubic-bezier(.65,.05,.36,1), filter 0.4s cubic-bezier(.65,.05,.36,1);
 }
 

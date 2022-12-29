@@ -1,4 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
+import './custom.css'
+
 import CustomLayout from './CustomLayout.vue'
 import BlogCard from './components/BlogCard.vue'
 import BlogsGrid from './components/BlogsGrid.vue'

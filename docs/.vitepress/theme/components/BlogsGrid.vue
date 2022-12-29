@@ -1,6 +1,7 @@
 <template>
-    <div v-for="(article, index) in posts" :key="index" class="list">
-        <BlogCard 
+    <div class="row">
+        <div class= "col-md-3 col-sm-1" v-for="(article, index) in posts" :key="index">
+    <BlogCard
         :title="article.metaData.title"
         :author="article.metaData.author"
         :category="article.metaData.category"
@@ -9,7 +10,9 @@
         :date="article.metaData.date"
         :path="article.path">
     </BlogCard>
-    </div>
+</div>
+</div>
+
 </template>
 
 <script lang="ts" setup>

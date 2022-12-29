@@ -27,8 +27,7 @@ const posts = theme.value.posts.slice(0,3)
 
 @media (max-width: 800px) {
   .blogs-container {
-    flex-direction: column;
-    align-items: center;
+
   }
 }
 </style>
