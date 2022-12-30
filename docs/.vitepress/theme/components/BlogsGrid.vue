@@ -1,5 +1,7 @@
 <template>
-    <div v-for="(article, index) in posts" :key="index" class="list">
+    <div class="row">
+    <div v-for="(article, index) in posts" :key="index" 
+    class="col-md-4">
         <BlogCard 
         :title="article.metaData.title"
         :author="article.metaData.author"
@@ -10,12 +12,13 @@
         :path="article.path">
     </BlogCard>
     </div>
+</div>
 </template>
 
 <script lang="ts" setup>
-
+import {Post} from '../models/post'
 const props = defineProps({
-    posts: Array,
+    posts: Array<Post>,    
 })
 </script>
 

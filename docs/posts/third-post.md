@@ -1,9 +1,9 @@
 ---
 date: 2021-06-30
-title: A Markdown Blog with Vite
+title: A blog site for free
 author: Jon Doe
 category: Sport
-cover: https://picsum.photos/1024/869?random=2
+cover: https://picsum.photos/1024/869?random=3
 
 tags:
 - vitepress

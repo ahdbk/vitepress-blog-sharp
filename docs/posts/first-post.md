@@ -1,9 +1,9 @@
 ---
 date: 2021-06-30
-title: First Post
+title: How to create a blog wwwith VitePress
 author: Jon Doe
-category: Sport
-cover: https://picsum.photos/1024/869
+category: Tech
+cover: https://picsum.photos/1024/869?random=1
 
 tags:
 - vitepress

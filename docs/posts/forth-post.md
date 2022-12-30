@@ -1,9 +1,9 @@
 ---
 date: 2021-06-30
-title: A Markdown Blog with Vite
+title: Host your first blog with VitePress
 author: Jon Doe
-category: Sport
-cover: https://picsum.photos/1024/869?random=2
+category: News
+cover: https://picsum.photos/1024/869?random=4
 
 tags:
 - vitepress

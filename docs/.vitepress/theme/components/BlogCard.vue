@@ -5,7 +5,7 @@
     </div>
     <div class="card-body">
       <span class="tag tag-teal">{{ category }}</span>
-      <h2 class="title">{{ title }}</h2>
+      <h3 class="title">{{ title }}</h3>
       <p>{{ description }}</p>
       <div class="user">
         <img src="https://picsum.photos/id/64/200/200" alt="" />
@@ -45,17 +45,25 @@ const goTo = (path: string) => {
 
 .card {
   margin: 10px;
-  background-color: --vp-c-bg;
+  background-color: var(--vp-c-bg);
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  /* width: 300px; */
+  min-width: 350x;
 }
 
 .title {
   margin-top: 1rem;
-  font-weight: bold;
-  font-size: large;
+  font-size: 1.625rem;
+  margin: 0;
+    font-family: var(--title-font);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    line-height: 1.3;
+    font-weight: 900;
+    letter-spacing: -0.5px;
 }
 .card:hover {
   cursor: pointer;
