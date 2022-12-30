@@ -1,7 +1,7 @@
 <template>
     <div class="row">
     <div v-for="(article, index) in posts" :key="index" 
-    class="col-md-4">
+    class="col-sm-6 col-md-4">
         <BlogCard 
         :title="article.metaData.title"
         :author="article.metaData.author"

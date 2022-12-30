@@ -6,6 +6,24 @@
     <div class="card-body">
       <span class="tag tag-teal">{{ category }}</span>
       <h3 class="title">{{ title }}</h3>
+      <div class="card-details">
+        <ul>
+          <li>
+            by
+          </li>
+          <li class="author">
+            {{ author }}
+          </li>
+          <li>
+            --
+          </li>
+          <li class="date">
+            <time>
+              {{ date }}
+            </time>
+          </li>
+        </ul>
+      </div>
       <p>{{ description }}</p>
       <div class="user">
         <img src="https://picsum.photos/id/64/200/200" alt="" />
@@ -53,9 +71,9 @@ const goTo = (path: string) => {
 }
 
 .title {
-  margin-top: 1rem;
-  font-size: 1.625rem;
-  margin: 0;
+    margin-top: 1rem;
+    font-size: 1.625rem;
+    margin: 15px 0;
     font-family: var(--title-font);
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -81,6 +99,22 @@ const goTo = (path: string) => {
   align-items: flex-start;
   padding: 20px;
   min-height: 250px;
+}
+.card-details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-details li {
+    display: inline-block;
+    padding-top: 3px;
+    margin-right: 5px;
+}
+
+.author ,
+.date {
+font-weight: bold;
 }
 
 .tag {
