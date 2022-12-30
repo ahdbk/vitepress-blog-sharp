@@ -71,7 +71,7 @@ const goTo = (path: string) => {
 }
 .card-header img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
 }
 .card-body {
