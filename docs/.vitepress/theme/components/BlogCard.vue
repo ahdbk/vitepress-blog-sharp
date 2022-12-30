@@ -24,13 +24,9 @@
           </li>
         </ul>
       </div>
-      <p>{{ description }}</p>
-      <div class="user">
-        <img src="https://picsum.photos/id/64/200/200" alt="" />
-        <div class="user-info">
-          <h5>{{ author }}</h5>
-          <small>{{ date }}</small>
-        </div>
+      <div class="description">{{ description }}</div>
+      <div class="continue" @click="goTo(path)">
+        Continue Reading -->
       </div>
     </div>
   </div>
@@ -41,13 +37,13 @@ import { useRouter, withBase } from 'vitepress'
 var router = useRouter()
 
 const props = defineProps({
-    title: String,
-    date: String,
-    author: String,
-    category: String,
-    cover: String,
-    description: String,
-    path: String
+  title: String,
+  date: String,
+  author: String,
+  category: String,
+  cover: String,
+  description: String,
+  path: String
 })
 
 
@@ -57,6 +53,7 @@ const goTo = (path: string) => {
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -65,33 +62,36 @@ const goTo = (path: string) => {
   margin: 10px;
   background-color: var(--vp-c-bg);
   border-radius: 10px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   min-width: 350x;
 }
 
 .title {
-    margin-top: 1rem;
-    font-size: 1.625rem;
-    margin: 15px 0;
-    font-family: var(--title-font);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-all;
-    word-break: break-word;
-    line-height: 1.3;
-    font-weight: 900;
-    letter-spacing: -0.5px;
+  margin-top: 1rem;
+  font-size: 1.625rem;
+  margin: 15px 0;
+  font-family: var(--title-font);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  line-height: 1.3;
+  font-weight: 900;
+  letter-spacing: -0.5px;
 }
+
 .card:hover {
   cursor: pointer;
-  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
 .card-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -100,21 +100,43 @@ const goTo = (path: string) => {
   padding: 20px;
   min-height: 250px;
 }
+
+.card-details {
+margin-bottom: 10px;
+}
+
 .card-details ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .card-details li {
-    display: inline-block;
-    padding-top: 3px;
-    margin-right: 5px;
+  display: inline-block;
+  padding-top: 3px;
+  margin-right: 5px;
 }
 
-.author ,
+.author,
 .date {
-font-weight: bold;
+  font-weight: bold;
+}
+
+.description {
+  font-size: medium;
+  margin: 0 0 1rem;
+  width: 100%;
+  margin-top: 5px;
+  color: gray;
+}
+
+.continue {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: small;
 }
 
 .tag {
@@ -127,30 +149,10 @@ font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .tag-teal {
   background-color: #47bcd4;
 }
 
-.card-body p {
-  font-size: 13px;
-  margin: 0 0 1rem;
-}
-.user {
-  display: flex;
-  margin-top: auto;
-}
 
-.user img {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  transform: scalex(-1);
-}
-.user-info h5 {
-  margin: 0;
-}
-.user-info small {
-  color: #545d7a;
-}
 </style>
