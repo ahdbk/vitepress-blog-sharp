@@ -3,7 +3,19 @@ page: true
 date: 2021-06-30
 title: home
 layout: home
-sidebar: false
+sidebar: true
+
+hero:
+  name: VitePress Blog Theme
+  text: a sharp blog theme
+  tagline: Powred by VitePress
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /guide/what-is-vitepress
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/vuejs/vitepress
 ---
 <script setup>
 import BlogsGrid from "./.vitepress/theme/components/BlogsGrid.vue";

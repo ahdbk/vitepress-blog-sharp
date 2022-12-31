@@ -1,7 +1,7 @@
 ---
 layout: doc
 date: 2022-01-30
-title: How to create a blog wwwith VitePress
+title: How to create a blog with VitePress
 author: Jon Doe
 category: Tech
 categoryColor: "#3498db"
