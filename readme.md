@@ -32,7 +32,7 @@ $ yarn build
 ```sh
 $ yarn dev
 ```
-### Project structure
+git s### Project structure
 ```
 .
 ├─ .vitepress

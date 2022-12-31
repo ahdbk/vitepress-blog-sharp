@@ -1,7 +1,7 @@
 const globby = require('globby')
 const matter = require('gray-matter')
 const fs = require('fs-extra')
-
+const readingTime = require('reading-time');
 module.exports = { getPosts }
 
 async function getPosts() {
@@ -13,10 +13,12 @@ async function getPosts() {
             data.date = _convertDate(data.date)
             return {
                 metaData: data,
-                path: `/${item.replace('.md', '.html')}`
+                path: `/${item.replace('.md', '.html')}`,
+                readingTime: readingTime(content).text
             }
         })
     )
+    console.log(posts)
     posts.sort(_compareDate)
     return posts
 }
