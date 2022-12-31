@@ -13,7 +13,7 @@ async function getPosts() {
             data.date = _convertDate(data.date)
             return {
                 metaData: data,
-                path: `/${item.substring(5).replace('.md', '.html')}`
+                path: `/${item.replace('.md', '.html')}`
             }
         })
     )
