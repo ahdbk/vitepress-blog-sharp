@@ -1,21 +1,25 @@
 <template>
-    <div v-for="(article, index) in posts" :key="index" class="list">
+    <div class="row">
+    <div v-for="(article, index) in posts" :key="index" 
+    class="col-sm-6 col-md-4">
         <BlogCard 
-        :title="article.frontMatter.title"
-        :author="article.frontMatter.author"
-        :category="article.frontMatter.category"
-        :thumbnail="article.frontMatter.thumbnail"
-        :description="article.frontMatter.description"
-        :date="article.frontMatter.date"
+        :title="article.metaData.title"
+        :author="article.metaData.author"
+        :category="article.metaData.category"
+        :categoryColor="article.metaData.categoryColor"
+        :cover="article.metaData.cover"
+        :description="article.metaData.description"
+        :date="article.metaData.date"
         :path="article.path">
     </BlogCard>
     </div>
+</div>
 </template>
 
 <script lang="ts" setup>
-
+import {Post} from '../models/post'
 const props = defineProps({
-    posts: Array,
+    posts: Array<Post>,    
 })
 </script>
 

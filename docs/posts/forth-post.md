@@ -1,16 +1,14 @@
 ---
 layout: doc
-date: 2022-01-30
-title: How to create a blog wwwith VitePress
+date: 2022-08-30
+title: Host your first blog with VitePress
 author: Jon Doe
-category: Tech
-categoryColor: "#3498db"
-cover: https://picsum.photos/1024/869?random=1
+category: News
+categoryColor: "#1abc9c"
+cover: https://picsum.photos/1024/869?random=4
 description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
 ---
-<img src="https://picsum.photos/1024/869?random=1" class = "post-cover">
-
-# {{ $frontmatter.title }}
+# Dummy
 
 Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic. It does so by making it easy to populate static HTML with dynamic content, and by randomizing elements within a layout on subsequent loads of a document, in a way, simulating connectivity to a live database.
 ---

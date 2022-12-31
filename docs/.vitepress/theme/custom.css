@@ -1,0 +1,31 @@
+:root {
+
+    /* --vp-c-bg : #fff7f3; */
+    /* --vp-post-bg : white; */
+}
+
+.dark {
+    /* --vp-c-bg : #fff7f3; */
+    /* --vp-post-bg : white; */
+}
+
+.blogs-container {
+  margin: 3rem 22rem;
+  max-width: calc(var(--vp-layout-max-width) - 64px)
+
+}
+
+@media (max-width: 800px) {
+  .blogs-container {
+    flex-direction: column;
+    margin: 3rem !important;
+
+  }
+}
+
+.post-cover {
+    margin: 5vh 0;
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+}
