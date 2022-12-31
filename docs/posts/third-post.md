@@ -1,13 +1,11 @@
 ---
-date: 2021-06-30
+layout: doc
+date: 2022-07-30
 title: A blog site for free
 author: Jon Doe
 category: Sport
+categoryColor: "#c0392b"
 cover: https://picsum.photos/1024/869?random=3
-
-tags:
-- vitepress
-- markdown
 description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
 ---
 # Dummy

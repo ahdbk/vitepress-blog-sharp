@@ -6,6 +6,7 @@
         :title="article.metaData.title"
         :author="article.metaData.author"
         :category="article.metaData.category"
+        :categoryColor="article.metaData.categoryColor"
         :cover="article.metaData.cover"
         :description="article.metaData.description"
         :date="article.metaData.date"

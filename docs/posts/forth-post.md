@@ -1,13 +1,11 @@
 ---
-date: 2021-06-30
+layout: doc
+date: 2022-08-30
 title: Host your first blog with VitePress
 author: Jon Doe
 category: News
+categoryColor: "#1abc9c"
 cover: https://picsum.photos/1024/869?random=4
-
-tags:
-- vitepress
-- markdown
 description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
 ---
 # Dummy

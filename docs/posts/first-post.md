@@ -1,13 +1,11 @@
 ---
-date: 2021-06-30
+layout: doc
+date: 2022-01-30
 title: How to create a blog wwwith VitePress
 author: Jon Doe
 category: Tech
+categoryColor: "#3498db"
 cover: https://picsum.photos/1024/869?random=1
-
-tags:
-- vitepress
-- markdown
 description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
 ---
 <img src="https://picsum.photos/1024/869?random=1" class = "post-cover">

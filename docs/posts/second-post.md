@@ -1,13 +1,12 @@
 ---
-date: 2021-06-30
+layout: doc
+date: 2022-06-30
 title: A Markdown Blog with Vite
 author: Jon Doe
 category: Sport
-cover: https://picsum.photos/1024/869?random=2
+categoryColor: "#c0392b"
 
-tags:
-- vitepress
-- markdown
+cover: https://picsum.photos/1024/869?random=2
 description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
 ---
 # Dummy

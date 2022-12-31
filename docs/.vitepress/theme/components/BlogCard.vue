@@ -3,8 +3,10 @@
     <div class="card-header">
       <img :src="cover" alt="" />
     </div>
+    <div class="card-tags">
+      <span class="tag" :style="{ background: categoryColor}">{{ category }}</span>
+    </div>
     <div class="card-body">
-      <span class="tag tag-teal">{{ category }}</span>
       <h3 class="title">{{ title }}</h3>
       <div class="card-details">
         <ul>
@@ -41,6 +43,7 @@ const props = defineProps({
   date: String,
   author: String,
   category: String,
+  categoryColor: String,
   cover: String,
   description: String,
   path: String
@@ -49,7 +52,8 @@ const props = defineProps({
 
 const goTo = (path: string) => {
   router.go(withBase(path))
-}
+};
+
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -102,7 +106,8 @@ const goTo = (path: string) => {
 }
 
 .card-details {
-margin-bottom: 10px;
+  font-size: small;
+  margin-bottom: 10px;
 }
 
 .card-details ul {
@@ -139,20 +144,18 @@ margin-bottom: 10px;
   font-size: small;
 }
 
+.card-tags {
+  margin: -16px 25px;
+}
+
 .tag {
-  background: #cccccc;
+  background-color: green;
   border-radius: 50px;
   font-size: 12px;
   margin: 0;
   color: #fff;
-  padding: 2px 10px;
+  padding: 10px 15px;
   text-transform: uppercase;
   cursor: pointer;
 }
-
-.tag-teal {
-  background-color: #47bcd4;
-}
-
-
 </style>

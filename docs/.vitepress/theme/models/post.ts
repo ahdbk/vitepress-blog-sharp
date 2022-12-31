@@ -3,6 +3,7 @@ export interface Post {
       title: string;
       author: string;
       category: string;
+      categoryColor: string;
       cover: string;
       description: string;
       date: string;
