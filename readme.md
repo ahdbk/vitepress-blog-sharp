@@ -9,8 +9,8 @@ this the is build on vitePress alpha stage. It is already suitable for out-of-th
 [Demo here]()
 
 ## 📷 Screenshot
-   <img title="blog" src="screenshots/01.png" width="40%"/>
-   <img title="blog" src="screenshots/02.png" width="40%"/>
+   <img title="blog" src="https://github.com/ahdbk/vitepress-blog-sharp/blob/main/screenshots/01.png" width="40%"/>
+   <img title="blog" src="https://github.com/ahdbk/vitepress-blog-sharp/blob/main/screenshots/02.png" width="40%"/>
 
 ## 📔 Documentation
 ## Development Setup

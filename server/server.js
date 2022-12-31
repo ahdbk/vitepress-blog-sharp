@@ -34,7 +34,7 @@ function _compareDate(obj1, obj2) {
 
 async function getPostMDFilePaths() {
     let paths = await globby(['**.md'], {
-        ignore: ['node_modules', 'README.md']
+        ignore: ['node_modules', 'README.md','CODE_OF_CONDUCT.md','CHANGELOG','contributing.md']
     })
     return paths.filter((item) => item.includes('posts/'))
 }
