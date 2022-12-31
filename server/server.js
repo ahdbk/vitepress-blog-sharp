@@ -1,7 +1,7 @@
 const globby = require('globby')
 const matter = require('gray-matter')
 const fs = require('fs-extra')
-
+const readingTime = require('reading-time');
 module.exports = { getPosts }
 
 async function getPosts() {
@@ -13,7 +13,8 @@ async function getPosts() {
             data.date = _convertDate(data.date)
             return {
                 metaData: data,
-                path: `/${item.replace('.md', '.html')}`
+                path: `/${item.replace('.md', '.html')}`,
+                readingTime: readingTime(content).text
             }
         })
     )
@@ -33,7 +34,7 @@ function _compareDate(obj1, obj2) {
 
 async function getPostMDFilePaths() {
     let paths = await globby(['**.md'], {
-        ignore: ['node_modules', 'README.md']
+        ignore: ['node_modules', 'README.md','CODE_OF_CONDUCT.md','CHANGELOG','contributing.md']
     })
     return paths.filter((item) => item.includes('posts/'))
 }

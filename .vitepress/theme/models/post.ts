@@ -8,5 +8,6 @@ export interface Post {
       description: string;
       date: string;
     };
+    readingTime: string;
     path: string;
   }

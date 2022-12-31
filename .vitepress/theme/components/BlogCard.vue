@@ -5,6 +5,8 @@
     </div>
     <div class="card-tags">
       <span class="tag" :style="{ background: categoryColor}">{{ category }}</span>
+      <span class="tag readintTime">{{ readingTime }}</span>
+
     </div>
     <div class="card-body">
       <h3 class="title">{{ title }}</h3>
@@ -46,6 +48,7 @@ const props = defineProps({
   categoryColor: String,
   cover: String,
   description: String,
+  readingTime: String,
   path: String
 })
 
@@ -149,12 +152,12 @@ const goTo = (path: string) => {
 }
 
 .tag {
-  background-color: green;
+  background-color: lightsteelblue;
   border-radius: 50px;
   font-size: 12px;
-  margin: 0;
+  margin: 5px;
   color: #fff;
-  padding: 10px 15px;
+  padding: 8px 15px;
   text-transform: uppercase;
   cursor: pointer;
 }
