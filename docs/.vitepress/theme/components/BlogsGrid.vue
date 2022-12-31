@@ -10,6 +10,7 @@
         :cover="article.metaData.cover"
         :description="article.metaData.description"
         :date="article.metaData.date"
+        :readingTime="article.readingTime"
         :path="article.path">
     </BlogCard>
     </div>
