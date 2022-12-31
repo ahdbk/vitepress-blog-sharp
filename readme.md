@@ -13,28 +13,22 @@ this the is build on vitePress alpha stage. It is already suitable for out-of-th
    <img title="blog" src="screenshots/02.png" width="40%"/>
 
 ## 📔 Documentation
+## Development Setup
+
+You will need [npm](https://nodejs.org/) or [yarn](https://yarnpkg.com/cli/install)
 
 ### Install
-```sh
-$ npm install 
-```
-or
+
 ```sh
 $ yarn install
 ```
 ### Build
-```sh
-$ npm run build 
-```
-or
+
 ```sh
 $ yarn build
 ```
 ### Start Blog
-```sh
-$ npm run dev 
-```
-or
+
 ```sh
 $ yarn dev
 ```
