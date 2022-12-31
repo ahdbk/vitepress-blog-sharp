@@ -2,7 +2,6 @@ const globby = require('globby')
 const matter = require('gray-matter')
 const fs = require('fs-extra')
 const readingTime = require('reading-time');
-const readingTime = require('reading-time');
 module.exports = { getPosts }
 
 async function getPosts() {
@@ -19,8 +18,6 @@ async function getPosts() {
             }
         })
     )
-    console.log(posts)
-    console.log(posts)
     posts.sort(_compareDate)
     return posts
 }
