@@ -11,8 +11,8 @@ this the is build on vitePress alpha stage. It is already suitable for out-of-th
 [Demo here](https://vitepress-blog-sharp.netlify.app/)
 
 ## 📷 Screenshot
-   <img title="blog" src="https://github.com/ahdbk/vitepress-blog-sharp/blob/main/screenshots/01.png" width="40%"/>
-   <img title="blog" src="https://github.com/ahdbk/vitepress-blog-sharp/blob/main/screenshots/02.png" width="40%"/>
+   <img title="blog" src="screenshots/01.png" width="40%"/>
+   <img title="blog" src="screenshots/02.png" width="40%"/>
 
 ## 📔 Documentation
 ## Development Setup
@@ -57,6 +57,44 @@ blog
 - The theme follow the basic [VitePress](https://vitepress.vuejs.org/) project structure with a [.vitepress](https://github.com/ahdbk/vitepress-blog-sharp/tree/main/.vitepress) folder that contain the theme and blog [config.js](https://github.com/ahdbk/vitepress-blog-sharp/blob/main/.vitepress/config.js) file
 
 for mere information please check the [official documentation](https://vitepress.vuejs.org/)
+### Post Markdown file
+All blog's posts are under the **Blog/posts** folder.
+We are using fronmatter format to collect some metadata and have the needed visual
+
+A post can have: 
+- a title
+- a date 
+- an author 
+- a category with custom color
+- a cover 
+- a description 
+
+- **date**,**author** and **discription** are hidden from the UI of not present in the article metadata
+- **cover** image will display a ramdom image if not present
+
+Example of a markdown header for an post 
+```markdown
+---
+layout: doc
+date: 2022-08-30
+title: Host your first blog with VitePress
+author: Jon Doe
+category: News
+categoryColor: "#1abc9c" // default to gray
+
+cover: /assets/cover.jpg
+
+description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
+---
+
+# you content here 
+
+....
+```
+**Important**
+FYI: If you are using a local asset as cover image. the image needs to go under the `public` folder.
+Note that you should reference files placed in public using root absolute path - for example, `public/icon.png` should always be referenced in source code as `/icon.png`. for more details please check the official documentation for [asset handling](https://vitepress.vuejs.org/guide/asset-handling#public-files) 
+
 
 ### Deploy
 

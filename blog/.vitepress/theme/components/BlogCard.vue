@@ -1,34 +1,34 @@
 <template>
   <div class="card" @click="goTo(path)">
     <div class="card-header">
-      <img :src="cover" alt="" />
+      <img :src="getCover(cover)" alt="" />
     </div>
     <div class="card-tags">
-      <span class="tag" :style="{ background: categoryColor}">{{ category }}</span>
-      <span class="tag readintTime">{{ readingTime }}</span>
+      <span v-if="category" class="tag"  :style="{ background: categoryColor}">{{ category }}</span>
+      <span v-if="readingTime" class="tag readintTime">{{ readingTime }}</span>
 
     </div>
     <div class="card-body">
       <h3 class="title">{{ title }}</h3>
       <div class="card-details">
         <ul>
-          <li>
+          <li v-if="author">
             by
           </li>
-          <li class="author">
+          <li class="author" v-if="author">
             {{ author }}
           </li>
           <li>
             --
           </li>
-          <li class="date">
+          <li class="date" v-if="date">
             <time>
               {{ date }}
             </time>
           </li>
         </ul>
       </div>
-      <div class="description">{{ description }}</div>
+      <div class="description" v-if="description" >{{ description }}</div>
       <div class="continue" @click="goTo(path)">
         Continue Reading -->
       </div>
@@ -36,10 +36,11 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { useRouter, withBase } from 'vitepress'
+import { useRouter, withBase,useData } from 'vitepress'
 
 var router = useRouter()
-
+const { theme } = useData();
+const defaultPostCover = theme.value.defaultPostCover
 const props = defineProps({
   title: String,
   date: String,
@@ -55,6 +56,10 @@ const props = defineProps({
 
 const goTo = (path: string) => {
   router.go(withBase(path))
+};
+
+const getCover = (path: string | undefined) => {
+  return path ?? defaultPostCover;
 };
 
 </script>
