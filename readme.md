@@ -8,7 +8,7 @@ SharpBlog is [VitePress](https://vitepress.vuejs.org/)' theme, built on top of [
 
 this the is build on vitePress alpha stage. It is already suitable for out-of-the-box documentation use, but the config and theming API may still change between minor releases.
 
-[Demo here]()
+[Demo here](https://vitepress-blog-sharp.netlify.app/)
 
 ## 📷 Screenshot
    <img title="blog" src="https://github.com/ahdbk/vitepress-blog-sharp/blob/main/screenshots/01.png" width="40%"/>
