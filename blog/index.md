@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: https://vitepress.vuejs.org/guide/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/ahdbk/vitepress-blog-sharp
 ---
 <script setup>
 import BlogsGrid from "./.vitepress/theme/components/BlogsGrid.vue";

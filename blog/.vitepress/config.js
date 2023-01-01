@@ -19,13 +19,14 @@ async function config() {
       themeConfig: {
         siteTitle: 'Sharp Blog',
         posts: await getPosts(),
+        defaultPostCover: 'https://picsum.photos/1024/869?random=2',
         website: "",
         nav: [
           { text: "Home", link: "/" },
           { text: "About", link: "/pages/about" },
         ],
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+          { icon: 'github', link: 'https://github.com/ahdbk/vitepress-blog-sharp' }
         ],
         footer: {
           message: 'Released under the MIT License.',
