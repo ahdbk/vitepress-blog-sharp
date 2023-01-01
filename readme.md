@@ -37,7 +37,7 @@ $ yarn build
 ```sh
 $ yarn dev
 ```
-git s### Project structure
+### Project structure
 ```
 blog
 ├─ .vitepress
@@ -72,8 +72,8 @@ A post can have:
 - a cover 
 - a description 
 
-- **date**,**author** and **discription** are hidden from the UI of not present in the article metadata
-- **cover** image will display a ramdom image if not present
+=>  **date**,**author** and **discription** are hidden from the UI of not present in the article metadata
+=>  **cover** image will display a ramdom image if not present
 
 Example of a markdown header for an post 
 ```markdown
