@@ -8,9 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "dev": "vitepress dev blog",
+    "build": "vitepress build blog",
+    "preview": "vitepress preview blog"
   },
   "devDependencies": {
     "@types/node": "^18.11.8",

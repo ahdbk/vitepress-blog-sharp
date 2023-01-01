@@ -30,7 +30,9 @@ async function config() {
         footer: {
           message: 'Released under the MIT License.',
           copyright: 'Copyright © 2023 - Ahd Ben Kheder'
-        }
+        },
+        srcExclude: ['CONTRIBUTING.md','README.md','CODE_OF_CONDUCT.md','CHANGELOG.md']
+
       },
     };
 }

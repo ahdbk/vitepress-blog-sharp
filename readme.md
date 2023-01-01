@@ -34,7 +34,7 @@ $ yarn dev
 ```
 git s### Project structure
 ```
-.
+blog
 ├─ .vitepress
 │  ├─ theme
 │  └─ config.js
