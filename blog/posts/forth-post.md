@@ -5,7 +5,9 @@ title: Host your first blog with VitePress
 author: Jon Doe
 category: News
 categoryColor: "#1abc9c"
-cover: https://picsum.photos/1024/869?random=4
+
+cover: ./assets/cover.png
+
 description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
 ---
 <img src="https://picsum.photos/1024/869?random=4" class = "post-cover">
