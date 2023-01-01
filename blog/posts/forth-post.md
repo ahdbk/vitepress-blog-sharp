@@ -6,7 +6,7 @@ author: Jon Doe
 category: News
 categoryColor: "#1abc9c"
 
-cover: ./assets/cover.png
+cover: /cover.png
 
 description: Dummy is a content generation toolkit designed to make the development, testing and presentation of web prototypes less time consuming and more realistic.
 ---
