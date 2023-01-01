@@ -73,7 +73,8 @@ A post can have:
 - a description 
 
 =>  **date**,**author** and **discription** are hidden from the UI of not present in the article metadata
-=>  **cover** image will display a ramdom image if not present
+
+=>  **cover** image will display a random image if not present
 
 Example of a markdown header for an post 
 ```markdown
