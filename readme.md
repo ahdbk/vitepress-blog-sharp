@@ -1,4 +1,6 @@
 # ✒️ SharpBlog | A vitepress theme🌟
+[![vitepress CI](https://github.com/ahdbk/vitepress-blog-sharp/actions/workflows/CI.yml/badge.svg)](https://github.com/ahdbk/vitepress-blog-sharp/actions/workflows/CI.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b2c9df8-24bd-4eca-add1-1ec0c251a22d/deploy-status)](https://app.netlify.com/sites/vitepress-blog-sharp/deploys)
 
 Hey all 👋 !!
 
