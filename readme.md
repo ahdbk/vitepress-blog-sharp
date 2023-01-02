@@ -72,9 +72,9 @@ A post can have:
 - a cover 
 - a description 
 
-=>  **date**,**author** and **discription** are hidden from the UI of not present in the article metadata
-
-=>  **cover** image will display a random image if not present
+> **Warning**
+**date**,**author** and **discription** are hidden from the UI of not present in the article metadata
+**cover** image will display a random image if not present
 
 Example of a markdown header for an post 
 ```markdown
@@ -95,8 +95,8 @@ description: Dummy is a content generation toolkit designed to make the developm
 
 ....
 ```
-**Important**
-FYI: If you are using a local asset as cover image. the image needs to go under the `public` folder.
+> **Warning**
+If you are using a local asset as cover image. the image needs to go under the `public` folder.
 Note that you should reference files placed in public using root absolute path - for example, `public/icon.png` should always be referenced in source code as `/icon.png`. for more details please check the official documentation for [asset handling](https://vitepress.vuejs.org/guide/asset-handling#public-files) 
 
 
