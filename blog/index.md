@@ -21,9 +21,13 @@ hero:
 import BlogsGrid from "./.vitepress/theme/components/BlogsGrid.vue";
 import { useData } from "vitepress";
 const { theme } = useData();
-const posts = theme.value.posts
+const posts = theme.value.posts;
+const carouselImages = theme.value.carouselImages;
+
 </script>
+
 <div class="container blogs-container">
+<BlogCarousel :imagesUrls="carouselImages"/>
 <BlogsGrid :posts="posts" />
 </div>
 

@@ -2,7 +2,7 @@ const globby = require('globby')
 const matter = require('gray-matter')
 const fs = require('fs-extra')
 const readingTime = require('reading-time');
-module.exports = { getPosts }
+module.exports = { getPosts , getCarouselImages}
 
 async function getPosts() {
     let paths = await getPostMDFilePaths()
@@ -20,6 +20,18 @@ async function getPosts() {
     )
     posts.sort(_compareDate)
     return posts
+}
+
+async function getCarouselImages() {
+    return [
+        "/assets/carousel/01.jpg",
+        "/assets/carousel/02.jpg",
+        "/assets/carousel/03.jpg",
+        "/assets/carousel/04.jpg",
+        "/assets/carousel/05.jpg",
+        "/assets/carousel/06.jpg",
+        "/assets/carousel/07.jpg",
+    ]
 }
 
 

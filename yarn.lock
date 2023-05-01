@@ -1009,6 +1009,11 @@ vue-demi@*:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.13.11.tgz#7d90369bdae8974d87b1973564ad390182410d99"
   integrity sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==
 
+vue-easy-lightbox@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/vue-easy-lightbox/-/vue-easy-lightbox-1.16.0.tgz#151db0a332eb32ac30616afb4e7dc09f3c82281b"
+  integrity sha512-9ckBIi56kTNkfbxioTBLKR3xnFjmkIs4SOvePn6XUciR+Dzuav0tgNjqDHkfsoo3nxIpUmfpQAT0YDl9TpJ5jA==
+
 vue-eslint-parser@^9.1.0:
   version "9.1.0"
   resolved "https://registry.npmjs.org/vue-eslint-parser/-/vue-eslint-parser-9.1.0.tgz"
@@ -1021,6 +1026,11 @@ vue-eslint-parser@^9.1.0:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue3-carousel@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.3.1.tgz#d001be7dea416dc2f4e66afc4d56af66696dc117"
+  integrity sha512-86vUkNPBzL2PVuR9w6hUsI90ccFjLp+K8cSFpRTISf+SjUQY3fMHc5CFF5MUL62v1xYYm27zEBmQupO9VQx9Kw==
 
 vue@^3.2.45:
   version "3.2.45"

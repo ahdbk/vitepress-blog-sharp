@@ -1,4 +1,4 @@
-const { getPosts  } = require('../server/server')
+const { getPosts , getCarouselImages } = require('../server/server')
 
 async function config() {
 
@@ -19,6 +19,7 @@ async function config() {
       themeConfig: {
         siteTitle: 'Sharp Blog',
         posts: await getPosts(),
+        carouselImages: await getCarouselImages(),
         defaultPostCover: 'https://picsum.photos/1024/869?random=2',
         website: "",
         nav: [
